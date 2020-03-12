@@ -30,6 +30,8 @@ public class Map_Generator : MonoBehaviour {
         {
             //Pick next room direction 
             int dir_index = Random.Range(0, 5);
+            //Pick next room 
+            int room_index = Random.Range(0, 3);
             //if 0 or 1 spawn room to the left
             if (dir_index == 0 || dir_index == 1)
             {
@@ -52,7 +54,7 @@ public class Map_Generator : MonoBehaviour {
                 transform.position = new_Room_pos;
             }
             //Instantiate room
-            Instantiate(Rooms[0], transform.position, Quaternion.identity);
+            Instantiate(Rooms[room_index], transform.position, Quaternion.identity);
             //Increase the amount of rooms spawned
             Rooms_spawned++;
         }

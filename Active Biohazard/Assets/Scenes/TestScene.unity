@@ -142,8 +142,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Start_point: {fileID: 914401922}
   Rooms:
-  - {fileID: 1514061567396534, guid: e9437f8648e5e4e43b7de4c0439eec4f, type: 2}
-  Room_amount: 30
+  - {fileID: 1070065160639128, guid: 984d8428499655d458f274e3e7cc9ffb, type: 2}
+  - {fileID: 1805935455463832, guid: 2d81bc92bfb476449b9f1a994da8d50b, type: 2}
+  - {fileID: 1752609401328190, guid: 3614a87493148274db1357ea66843bb3, type: 2}
+  - {fileID: 1508812224653484, guid: 76874c6c6f7a6154287efc842a3fd40b, type: 2}
+  Room_amount: 20
   Move_X: 10
   Move_Y: 5
 --- !u!4 &434294506
@@ -301,14 +304,14 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 1
   far clip plane: 1000
   field of view: 60
   orthographic: 1
@@ -335,7 +338,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2142956600}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.88, y: 6.26, z: -1}
+  m_LocalPosition: {x: -3, y: 6.26, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

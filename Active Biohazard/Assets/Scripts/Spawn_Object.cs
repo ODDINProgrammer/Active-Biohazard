@@ -11,6 +11,7 @@ public class Spawn_Object : MonoBehaviour {
         //Pick a random object from list
         int index = Random.Range(0, Objects.Length);
         //Instantiate the object
-        Instantiate(Objects[index], transform.position, Quaternion.identity);
+        GameObject instance = (GameObject)Instantiate(Objects[index], transform.position, Quaternion.identity);
+        instance.transform.parent = transform;
     }
 }
